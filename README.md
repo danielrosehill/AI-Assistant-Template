@@ -16,6 +16,18 @@ The demonstration project is a simple configuration for an assistant to provide 
 
 It is a simple use case that only requires a very small amount of contextual data.  
 
+## Organisation
+
+The `system prompts` folder contains a version history for the different system prompts, which are the core part of assistant configuration. 
+
+The `context data` folder contains context data intended to be added as knowledge for the assistant. In a more elaborate setup, this folder could be configured as a data pipeline directly feeding its contextual data into a vector database. 
+
+The `icon` folder contains an icon for the agent. 
+
+Finally, the repository also contains an agent builder script. This contains a prompt which can be used for code generation in order to create Python scripts to programmatically create `JSON` configurations from natural language markdown files. 
+
+Together, this folder structure comprises a basic structured "workbench" that can be used to draft and provision effective AI assistants. Doing so in something like a Github repository is also a valuable way, in my opinion, of decoupling your configurations, which are valuable intellectual property, from any one platform you're deploying your assistants on.
+
 ## Author
 
 Daniel Rosehill  
